@@ -10,6 +10,9 @@ Projeto desenvolvido para exercitar meus conhecimentos em **HTML, CSS e JavaScri
 
 ![Jogo finalizado](https://user-images.githubusercontent.com/102488476/209682326-230cd0b3-b983-4fa7-bd29-e11c80729a3d.png)
 
+## Jogar
+
+[Clique aqui para jogar](https://frednogueiradev.github.io/flappy-bird/)
 
 ## Autor
 
