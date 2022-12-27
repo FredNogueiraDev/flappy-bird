@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+:root {
+    --verde-barreira-gradiente-1: #639301;
+    --verde-barreira-gradiente-2: #A5E82E;
+    --branco: #fff;
+    --branco-hidden: rgba(255, 255, 255, 0.642);
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.passaro{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, var(--verde-barreira-gradiente-1), var(--verde-barreira-gradiente-2));
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, var(--verde-barreira-gradiente-1), var(--verde-barreira-gradiente-2));
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 70px;
+    font-family: Pixel;
+    z-index: 1;
+}
+
+.gameOver{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gameOverP{
+    font-size: 70px;
+    font-family: Pixel; 
+    border: 10px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.gameOverButton{
+    font-size: 55px;
+    font-family: Pixel; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+.gameOverButton:hover{
+    color: var(--branco-hidden);
+}
+
+.pontuacaoFinal{
+    left: calc(48% - 80px);
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    font-size: 50px;
+    font-family: Pixel;
+    z-index: 1;
+}
+
+.record{
+    left: calc(48% - 80px);
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    font-size: 50px;
+    font-family: Pixel;
+    z-index: 1;
+
+}
