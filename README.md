@@ -1,6 +1,6 @@
 # Flappy Bird
 
-![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Andamento-green?style=for-the-badge)
+![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Finalizado-green?style=for-the-badge)
 
 ## Descrição
 
